@@ -1,6 +1,6 @@
 import numpy as np 
 from sklearn import tree
-from sklearn.ensemble import RandomForestClassifier
+from sk learn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
@@ -20,25 +20,25 @@ test_labels = ['male', 'male', 'male']
 dtc_clf = tree.DecisionTreeClassifier()
 dtc_clf = dtc_clf.fit(X,Y)
 dtc_prediction = dtc_clf.predict(test_data)
-print dtc_prediction
+print 'dtc_prediction'
 
 #RandomForestClassifier
 rfc_clf = RandomForestClassifier()
 rfc_clf.fit(X,Y)
 rfc_prediction = rfc_clf.predict(test_data)
-print rfc_prediction
+print 'rfc_prediction'
 
 #SupportVectorClassifier
 s_clf = SVC()
 s_clf.fit(X,Y)
 s_prediction = s_clf.predict(test_data)
-print s_prediction
+print 's_prediction'
 
 #logisticRegression
 l_clf = LogisticRegression()
 l_clf.fit(X,Y)
 l_prediction = l_clf.predict(test_data)
-print l_prediction
+print 'l_prediction'
 
 #accuracy scores
 dtc_tree_acc = acuuracy_score(dtc_prediction,test_labels)
