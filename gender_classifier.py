@@ -1,6 +1,6 @@
 import numpy as np 
 from sklearn import tree
-from sk learn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
